@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import br.com.erudio.data.vo.v1.PersonVO;
 import br.com.erudio.exceptions.ResourceNotFoundException;
 import br.com.erudio.mapper.DozerMapper;
-import br.com.erudio.mapper.custom.PersonMapper;
 import br.com.erudio.model.Person;
 import br.com.erudio.repositories.PersonRepository;
 
@@ -21,8 +20,7 @@ public class PersonServices {
 	@Autowired
 	PersonRepository repository;
 	
-	@Autowired
-	PersonMapper mapper;
+
 
 	public List<PersonVO> findAll() {
 
